@@ -192,14 +192,6 @@ footer {
   margin: 8px 0;
 }
 
-.map-container {
-  margin: 20px 0;
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 8px;
-}
-
 .team-profiles {
   display: flex;
   justify-content: space-around;
