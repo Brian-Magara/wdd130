@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>White Water Rafting Co. | Home</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Whitewater Rafting Adventures - Home Page">
+    <meta name="author" content="Brian Magara">
+    <title>Whitewater Rafting Co. | Home</title>
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- COMMON CSS FILE ✔️ -->
 </head>
-
 <body>
-  <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Co. Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Trips</a>
-      <a href="#">Contact Us</a>
-    </nav>
-    <h1>Welcome to White Water Rafting Co.</h1>
-    <p>Experience the thrill and beauty of nature with our professional guided rafting trips.</p>
-  </header>
+    <!-- Consistent Header/Nav (matches other pages) ✔️ -->
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Your Next Adventure Awaits!</h2>
-      <p>Join us for exciting, family-friendly whitewater rafting trips designed for all skill levels.</p>
-      <img src="images/hero-about.jpg" alt="People enjoying whitewater rafting adventure" />
-    </section>
-  </main>
+    <main>
+        <!-- HERO SECTION ✔️ -->
+        <section class="hero">
+            <img src="images/hero-abot.jpg" alt="Rafting adventure" class="hero-image">
+            <h1 class="hero-text">Experience the Rush of Whitewater Rafting</h1> <!-- Positioned absolutely ✔️ -->
+        </section>
 
-  <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Brian Magara</p>
-  </footer>
+        <!-- NEWSLETTER FORM ✔️ -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <label for="news-name">Name:</label>
+                    <input type="text" id="news-name" name="news-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="news-email">Email:</label>
+                    <input type="email" id="news-email" name="news-email" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- GRID LAYOUT (Not single column) ✔️ -->
+        <section class="home-grid">
+            <!-- TRIPS CTA ✔️ -->
+            <div class="grid-item cta-card">
+                <img src="images/rafting1.jpg" alt="Rafting adventure">
+                <div class="card-content">
+                    <h3>Ready to Adventure?</h3>
+                    <p>Explore our exciting trip packages</p>
+                    <a href="trips.html" class="btn">View Trips</a> <!-- Compelling CTA ✔️ -->
+                </div>
+            </div>
+
+            <!-- SITE PURPOSE ✔️ -->
+            <div class="grid-item purpose-card">
+                <img src="images/rafting2.jpg" alt="Team rafting">
+                <div class="card-content">
+                    <h3>Our Mission</h3>
+                    <p>To deliver unforgettable river experiences with top-tier safety standards and environmental stewardship.</p>
+                </div>
+            </div>
+
+            <!-- OFFERINGS ✔️ -->
+            <div class="grid-item offerings-card">
+                <img src="images/rafting3.jpg" alt="Rafting gear">
+                <div class="card-content">
+                    <h3>What We Offer</h3>
+                    <ul>
+                        <li>Expert guides</li>
+                        <li>Premium equipment</li>
+                        <li>Custom group trips</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Consistent Footer ✔️ -->
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting Co. | Brian Magara</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </nav>
+    </footer>
 </body>
-
 </html>
